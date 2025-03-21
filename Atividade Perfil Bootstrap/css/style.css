@@ -1,0 +1,67 @@
+#fundo {
+    background-color: rgb(248, 254, 254);
+}
+
+header {
+    background-color: blueviolet;
+    display: block;
+    text-align: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+#centro {
+    text-align: center;
+}
+
+
+.lado_a_lado {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+img {
+    border-radius: 20px;
+}
+
+.descricao {
+    float: right;
+    background-color: rgb(201, 180, 221);
+    border-radius: 20px;
+    text-align: justify;
+    padding: 5px;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 40%;
+}
+
+.texto {
+    background-color: lightgrey;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+    width: auto;
+    text-align: center;
+}
+
+form {
+    padding: 15px;
+    width: 300px;
+    border-radius: 15px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    background-color: blueviolet;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+button:hover {
+    background-color: blue;
+}
