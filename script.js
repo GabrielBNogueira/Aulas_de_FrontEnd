@@ -1,31 +1,33 @@
-function somar () {
-    let numero1 = parseFloat(document.getElementById('numero1').value);
-    let numero2 = parseFloat(document.getElementById('numero2').value);
+function lerNumero1(){
+    var numero1 = parseFloat(document.getElementById('numero1').value);
+    return numero1;
+}
 
-   let resultado = numero1+numero2;
-   document.getElementById('resultado').innerText = resultado;
+function lerNumero2(){
+    var numero2 = parseFloat(document.getElementById('numero2').value);
+    return numero2;
+}
+
+function somar () {
+    let resultado = lerNumero1() + lerNumero2();
+    document.getElementById('resultado').innerText = resultado;
 }
 
 function subtrair () {
-    let numero1 = parseFloat(document.getElementById('numero1').value);
-    let numero2 = parseFloat(document.getElementById('numero2').value);
-
-    let resultado = numero1-numero2;
+    let resultado = lerNumero1() - lerNumero2();
     document.getElementById('resultado').innerText = resultado;
 }
 
 function multiplicar () {
-    let numero1 = parseFloat(document.getElementById('numero1').value);
-    let numero2 = parseFloat(document.getElementById('numero2').value);
-
-    let resultado = numero1*numero2;
+    let resultado = lerNumero1() * lerNumero2();
     document.getElementById('resultado').innerText = resultado;
 }
 
 function dividir () {
-    let numero1 = parseFloat(document.getElementById('numero1').value);
-    let numero2 = parseFloat(document.getElementById('numero2').value);
-
-    let resultado = numero1/numero2;
-    document.getElementById('resultado').innerText = resultado;
+    if(numero2 === 0){
+        document.getElementById('resultado').innerText = "Divisão por zero."
+    }else{
+        let resultado = lerNumero1() / lerNumero2();
+        document.getElementById('resultado').innerText = resultado;
+    }
 }
